@@ -1,0 +1,38 @@
+body {
+	background: #eaeaea;
+}
+
+
+.btn {
+	background: red;
+	display: inline-block;
+	padding: 0 15px;
+	line-height: 1.8em;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+.btn-fullWidth {
+	display: block;
+	width: 100%;
+}
+
+
+.questions {
+	background: #fff;
+}
+
+
+.questionSingle {
+	border-bottom: 1px solid #cacaca;
+}
+
+.questionSingle-inner {
+	padding: 20px;
+}
+
+.questionSingle-footer {
+	border-top: 1px solid #f4f4f4;
+	padding-top: 20px;
+}
