@@ -2,7 +2,6 @@ body {
 	background: #eaeaea;
 }
 
-
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -10,9 +9,8 @@ body {
 /** Fonts **/
 h1, h2, h3, h4, h5 {
 	font-family: 'Raleway', sans-serif;
-	font-weight: bold;
+	font-weight: 500;
 }
-
 
 .btn {
 	background: red;
@@ -29,11 +27,31 @@ h1, h2, h3, h4, h5 {
 	width: 100%;
 }
 
-.header {
-	margin-top: 1em;
-	margin-bottom: 3em;
+.featureFrame {
+	position: relative;
 }
 
+.featureFrame:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	top: 40px;
+	bottom: 40px;
+	left: 0;
+	background: #3AC2C0;
+	z-index: 0;
+}
+
+.featureFrame-inner {
+	background: #fff;
+	position: relative;
+	z-index: 1;
+}
+
+.header {
+	margin-top: 1em;
+	margin-bottom: 5em;
+}
 
 .header .nav {
 	margin-top: 1em;
@@ -69,4 +87,39 @@ h1, h2, h3, h4, h5 {
 .questionSingle-footer {
 	border-top: 1px solid #f4f4f4;
 	padding-top: 20px;
+}
+
+
+/* Home Login and Register */
+
+.leftPane {
+	float:left;
+	width: 50%;
+	padding: 15px;
+	background-image: url("../images/study_hall.jpeg");
+	height: 400px;
+	display: flex;
+    justify-content:center;
+	align-content:center;
+	flex-direction:column; 
+	
+}
+
+.leftPane h2 {
+	color: #fff;
+
+}
+
+.rightPane {
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+
+@media (max-width: 768px)  {
+	.leftPane,
+	.rightPane {
+		width: 100%;
+		float: none;
+	}
 }
