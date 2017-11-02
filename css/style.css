@@ -3,6 +3,17 @@ body {
 }
 
 
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/** Fonts **/
+h1, h2, h3, h4, h5 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+
 .btn {
 	background: red;
 	display: inline-block;
@@ -18,6 +29,29 @@ body {
 	width: 100%;
 }
 
+.header {
+	margin-top: 1em;
+	margin-bottom: 3em;
+}
+
+
+.header .nav {
+	margin-top: 1em;
+}
+
+.header .nav-item {
+	margin-left: 1em;
+}
+
+.header h1 {
+	font-size: 1.6em;
+	color: #329882;
+}
+
+.header h3 {
+	font-size: 1em;
+
+}
 
 .questions {
 	background: #fff;
