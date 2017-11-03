@@ -116,6 +116,14 @@ header h3 {
 
 }
 
+footer {
+	margin-top: 20px;
+}
+
+footer p {
+	text-align: center;
+}
+
 .sidebar > .btn {
 	margin-bottom: 1em;
 }
