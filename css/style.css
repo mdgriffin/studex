@@ -2,8 +2,10 @@ body {
 	background: #eaeaea;
 }
 
-body {
-	font-family: 'Roboto', sans-serif;
+
+p {
+	color: #555656;
+	font-weight: 300;
 }
 
 /** Fonts **/
@@ -12,19 +14,37 @@ h1, h2, h3, h4, h5 {
 	font-weight: 500;
 }
 
+
+/** Overrides **/
+
 .btn {
-	background: red;
-	display: inline-block;
-	padding: 0 15px;
-	line-height: 1.8em;
-	color: #fff;
-	text-decoration: none;
-	text-align: center;
+	border-radius: 0;
+	cursor: pointer;
 }
 
-.btn-fullWidth {
-	display: block;
-	width: 100%;
+.btn-subscribe {
+	background: #219653;
+	color: #fff;
+}
+
+.btn-unsubscribe {
+	background: #EB5757;
+	color: #fff;
+}
+
+.pageTitle {
+	margin: 1em 0;
+	display: inline-block;
+}
+
+.boxed {
+	background: #fff;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,0.1);
+	margin-bottom: 2em;
+}
+
+.lower {
+	background: #fff;
 }
 
 .featureFrame {
@@ -49,8 +69,8 @@ h1, h2, h3, h4, h5 {
 }
 
 .header {
-	margin-top: 1em;
-	margin-bottom: 5em;
+	margin-top: 2em;
+	margin-bottom: 3em;
 }
 
 .header .nav {
@@ -71,24 +91,55 @@ h1, h2, h3, h4, h5 {
 
 }
 
-.questions {
-	background: #fff;
+.sidebar > .btn {
+	margin-bottom: 1em;
 }
 
+.sidebar > ul {
+	margin: 0;
+	padding: 0;
+}
+
+.sidebar > ul li {
+	list-style: none;
+	margin: 0.5em 0;
+}
+
+.sidebar > h3 {
+	margin: 1em 0;
+}
+
+/* Question Page */
 
 .questionSingle {
-	border-bottom: 1px solid #cacaca;
+	border-bottom: 1px solid #f4f4f4;
 }
 
-.questionSingle-inner {
+.questionSingle-question,
+.questionSingle-footer {
 	padding: 20px;
+}
+
+.questionSingle-title {
+	padding: 20px 0 0 0;
+}
+
+.questionSingle-title  h3 {
+	border-left: 3px solid #ccc;
+	padding: 15px 20px;
 }
 
 .questionSingle-footer {
 	border-top: 1px solid #f4f4f4;
-	padding-top: 20px;
 }
 
+.questionSingle-footer h4,
+.questionSingle-footer h5 {
+	font-size: 1em;
+	color: #555656;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	font-weight: 300;
+}
 
 /* Home Login and Register */
 
@@ -97,17 +148,16 @@ h1, h2, h3, h4, h5 {
 	width: 50%;
 	padding: 15px;
 	background-image: url("../images/study_hall.jpeg");
-	height: 500px;
+	background-size: cover;
+	height: 510px;
 	display: flex;
     justify-content:center;
 	align-content:center;
 	flex-direction:column; 
-	
 }
 
 .leftPane h2 {
 	color: #fff;
-
 }
 
 .rightPane {
@@ -122,4 +172,18 @@ h1, h2, h3, h4, h5 {
 		width: 100%;
 		float: none;
 	}
+}
+
+
+/* My Topics */
+
+.topicSelect-single  {
+	border: 1px solid #000;
+	padding: 10px;
+	margin-bottom: 30px;
+}
+
+.topicSelect-single h3 {
+	text-align: center;
+	margin: 15px 0;
 }
