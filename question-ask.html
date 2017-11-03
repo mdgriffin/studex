@@ -1,95 +1,43 @@
-<!doctype html>
-<html class="no-js" lang="">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+title: "Ask a question Page"
+---
 
+<div class="p-questionAsk lower">
 
-        <!-- fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:300,400,700" rel="stylesheet">
+    <div class="container">
 
+        <h2 class="pageTitle">Ask A Question</h2>
 
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/bootstrap-grid.css">
-        <link rel="stylesheet" href="css/bootstrap-reboot.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/simplemde.min.css">
-    </head>
-    <body>
+        <form>
+            <div class="form-group">
+                <label for="question-title">Question Title</label>
+                <input type="email" class="form-control" id="question-title">
+            </div>
 
+            <div class="form-group">
+                <label for="topic">Topic</label>
+                <select name="topic" class="form-control" id="topic">
+                    <option value="OOP">OOP</option>
+                    <option value="SQL">SQL</option>
+                    <option value="Databases">Databases</option>
+                </select>
+            </div>
 
-        
-
-        <div class="header">
-
-            <div class="container">
-
-                <div class="row">
+            <div class="form-group">
+                <label for="question">Question</label>
+                <textarea  id="question"></textarea>
+            </div>
             
-                    <div class="col-sm-12 col-md-4">
-
-                        <h1>Student Exchange</h1>
-                        <h3 class="">Where Students Help Students</h3>
-
-                    </div>
-
-                    <div class="col-sm-12 col-md-8 clearfix">
-
-                        <ul class="nav float-right">
-                            <li><a class="nav-item" href="index.html">Home</a></li>
-                            <li><a class="nav-item" href="topic.html">Topics</a></li>
-                            <li><a class="nav-item" href="#">Ask a Question</a></li>
-                            <li><a class="nav-item" href="#">My Profile</a></li>
-                        </ul>
-
-                    </div>
-
-                </div>
-
-            </div><!-- container -->
-
-        </div><!-- header -->
-
-        <div class="p-questionAsk lower">
-
-            <div class="container">
-
-                <h2 class="pageTitle">Ask A Question</h2>
-
-                <form>
-                    <div class="form-group">
-                        <label for="question-title">Question Title</label>
-                        <input type="email" class="form-control" id="question-title">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="topic">Topic</label>
-                        <select name="topic" class="form-control" id="topic">
-                            <option value="OOP">OOP</option>
-                            <option value="SQL">SQL</option>
-                            <option value="Databases">Databases</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="question">Question</label>
-                        <textarea  id="question"></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                </form>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
 
 
-            </div><!-- container -->
+    </div><!-- container -->
 
-        </div>
+</div>
 
-        <script src="js/simplemde.min.js"></script>
-        <script>
-            var simplemde = new SimpleMDE({ element: document.getElementById("question") });
-        </script>
-    </body>
-</html>
+<script src="js/simplemde.min.js"></script>
+<script>
+    var simplemde = new SimpleMDE({ element: document.getElementById("question") });
+</script>
