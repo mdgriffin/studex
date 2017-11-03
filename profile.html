@@ -52,65 +52,86 @@
 
         </div><!-- header -->
 
-        <div class="p-myTopics lower">
+        <div class="p-profile lower">
 
             <div class="container">
 
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Edit Profile</a>
+                        <a class="nav-link active" data-toggle="tab" href="#editProfile">Edit Profile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Notifications</a>
+                        <a class="nav-link" data-toggle="tab" href="#notifications">Notifications</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">My Topics</a>
+                        <a class="nav-link" data-toggle="tab" href="#myTopics">My Topics</a>
                     </li>
                 </ul>
 
-                <h2 class="pageTitle">Edit Profile</h2>
+                <div class="tab-content">
 
-                <form>
+                    <div class="tab-pane active" id="editProfile" role="tabpanel">
+                
+                        <h2 class="pageTitle">Edit Profile</h2>
+
+                        <form>
+                                
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="fullname">Fullname</label>
+                                <input type="text" class="form-control" id="fullname" placeholder="Password">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="college">College</label>
+                                <select name="college" class="form-control" id="college">
+                                    <option value="Institute of Technology Tralee">Institute of Technology Tralee</option>
+                                    <option value="Cork Institute of Technology">Cork Institute of Technology</option>
+                                    <option value="Dublin Institute of Technology">Dublin Institute of Technology</option>
+                                    <option value="Waterford Institute of Technology">Waterford Institute of Technology</option>
+                                    <option value="Galway Mayo Institute of Technology">Galway Mayo Institute of Technology</option>
+                                    <option value="Limerick Institute of Technology">Limerick Institute of Technology</option>
+                                    <option value="University College Cork (UCC)">University College Cork (UCC)</option>
+                                    <option value="University of Limerick">University of Limerick</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Register</button>
+
                         
-                    <div class="form-group">
-                        <label for="email">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                    </div>
+                        </form>
 
-                    <div class="form-group">
-                        <label for="fullname">Fullname</label>
-                        <input type="text" class="form-control" id="fullname" placeholder="Password">
-                    </div>
+                    </div><!-- tab-pane -->
 
-                    <div class="form-group">
-                        <label for="college">College</label>
-                        <select name="college" class="form-control" id="college">
-                            <option value="Institute of Technology Tralee">Institute of Technology Tralee</option>
-                            <option value="Cork Institute of Technology">Cork Institute of Technology</option>
-                            <option value="Dublin Institute of Technology">Dublin Institute of Technology</option>
-                            <option value="Waterford Institute of Technology">Waterford Institute of Technology</option>
-                            <option value="Galway Mayo Institute of Technology">Galway Mayo Institute of Technology</option>
-                            <option value="Limerick Institute of Technology">Limerick Institute of Technology</option>
-                            <option value="University College Cork (UCC)">University College Cork (UCC)</option>
-                            <option value="University of Limerick">University of Limerick</option>
-                        </select>
-                    </div>
+                    <div class="tab-pane" id="notifications" role="tabpanel">
+                        
+                        <h2 class="pageTitle">Notifications</h2>
+
+                    </div><!-- tab-pane -->
+
+                    <div class="tab-pane" id="myTopics" role="tabpanel">
+
+                        <h2 class="pageTitle">My Topics</h2>
+                            
+                    </div><!-- tab-pane -->
                     
-                    <div class="form-group">
-                        <label for="password">Password</label>
-                        <input type="password" class="form-control" id="password" placeholder="Password">
-                    </div>
-
-                    
-                    <button type="submit" class="btn btn-primary btn-block">Register</button>
-
-                
-                </form>
-                
+                </div><!-- tab-content -->
 
             </div><!-- container -->
 
         </div>
 
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
