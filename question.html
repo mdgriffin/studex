@@ -162,7 +162,7 @@ title: "Question Page"
                         </div>
 
                         <div class="form-group">
-                            <textarea  id="answer"></textarea>
+                            <textarea  id="markdownEditor"></textarea>
                         </div>
                         
                         <button type="submit" class="btn btn-primary">Submit</button>
@@ -208,6 +208,4 @@ title: "Question Page"
 </div><!-- p-answer -->
 
 <script src="js/simplemde.min.js"></script>
-<script>
-    var simplemde = new SimpleMDE({ element: document.getElementById("answer") });
-</script>
+<script src="js/editor-init.js"></script>

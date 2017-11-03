@@ -25,8 +25,8 @@ title: "Ask a question Page"
             </div>
 
             <div class="form-group">
-                <label for="question">Question</label>
-                <textarea  id="question"></textarea>
+                <label for="markdownEditor">Question</label>
+                <textarea  id="markdownEditor"></textarea>
             </div>
             
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -38,6 +38,4 @@ title: "Ask a question Page"
 </div>
 
 <script src="js/simplemde.min.js"></script>
-<script>
-    var simplemde = new SimpleMDE({ element: document.getElementById("question") });
-</script>
+<script src="js/editor-init.js"></script>
