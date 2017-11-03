@@ -76,20 +76,20 @@ h1, h2, h3, h4, h5 {
 	z-index: 1;
 }
 
-.header {
+header {
 	margin-top: 2em;
 	margin-bottom: 3em;
 }
 
-.header .nav {
+header .nav {
 	margin-top: 1em;
 }
 
-.header .nav-item {
+header .nav-item {
 	position: relative;
 }
 
-.header .nav-item span {
+header .nav-item span {
 	position: absolute;
 	border-radius: 50%;
 	background: red;
@@ -102,16 +102,16 @@ h1, h2, h3, h4, h5 {
 	text-align: center;
 }
 
-.header .nav-item {
+header .nav-item {
 	margin-left: 1em;
 }
 
-.header h1 {
+header h1 {
 	font-size: 1.6em;
 	color: #329882;
 }
 
-.header h3 {
+header h3 {
 	font-size: 1em;
 
 }
