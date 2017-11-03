@@ -16,6 +16,7 @@
         <link rel="stylesheet" href="css/bootstrap-grid.css">
         <link rel="stylesheet" href="css/bootstrap-reboot.css">
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/simplemde.min.css">
     </head>
     <body>
 
@@ -72,6 +73,11 @@
                             <option value="Databases">Databases</option>
                         </select>
                     </div>
+
+                    <div class="form-group">
+                        <label for="question">Question</label>
+                        <textarea  id="question"></textarea>
+                    </div>
                     
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
@@ -81,5 +87,9 @@
 
         </div>
 
+        <script src="js/simplemde.min.js"></script>
+        <script>
+        var simplemde = new SimpleMDE({ element: document.getElementById("question") });
+        </script>
     </body>
 </html>
