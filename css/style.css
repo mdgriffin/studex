@@ -213,8 +213,34 @@ h1, h2, h3, h4, h5 {
 	padding-top: 20px;
 }
 
-/* */
+/* Profile Page */
 
 .p-profile {
 	padding: 20px 0;
+}
+
+.notifications-single {
+	border: 1px solid #A8A8A8;
+	margin-bottom: 20px;
+}
+
+.notifications-single p {
+	margin: 0;
+}
+
+.notifications-single-date {
+	float: left;
+	width: 20%;
+	background: #A8A8A8;
+	padding: 15px;
+}
+
+.notifications-single-date p {
+	color: #fff;
+}
+
+.notifications-single-message {
+	float: left;
+	width: 80%;
+	padding: 15px;
 }
