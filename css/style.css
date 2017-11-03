@@ -32,6 +32,14 @@ h1, h2, h3, h4, h5 {
 	color: #fff;
 }
 
+.btn-upvote {
+	color: green;
+}
+
+.btn-downvote {
+	color: red;
+}
+
 .pageTitle {
 	margin: 1em 0;
 	display: inline-block;
@@ -111,30 +119,30 @@ h1, h2, h3, h4, h5 {
 
 /* Question Page */
 
-.questionSingle {
+.qa-single {
 	border-bottom: 1px solid #f4f4f4;
 }
 
-.questionSingle-question,
-.questionSingle-footer {
+.qa-single-question,
+.qa-single-footer {
 	padding: 20px;
 }
 
-.questionSingle-title {
+.qa-single-title {
 	padding: 20px 0 0 0;
 }
 
-.questionSingle-title  h3 {
+.qa-single-title  h3 {
 	border-left: 3px solid #ccc;
 	padding: 15px 20px;
 }
 
-.questionSingle-footer {
+.qa-single-footer {
 	border-top: 1px solid #f4f4f4;
 }
 
-.questionSingle-footer h4,
-.questionSingle-footer h5 {
+.meta-info h4,
+.meta-info h5 {
 	font-size: 1em;
 	color: #555656;
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -186,4 +194,21 @@ h1, h2, h3, h4, h5 {
 .topicSelect-single h3 {
 	text-align: center;
 	margin: 15px 0;
+}
+
+
+/* Question Page */
+
+.questionBanner {
+	padding: 20px 0;
+}
+
+.questionBanner h2 {
+	padding: 10px 20px;
+	border-left: 4px solid purple;
+}
+
+.questionBanner-meta {
+	border-top: 1px solid #f4f4f4;
+	padding-top: 20px;
 }
