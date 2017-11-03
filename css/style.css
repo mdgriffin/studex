@@ -86,6 +86,23 @@ h1, h2, h3, h4, h5 {
 }
 
 .header .nav-item {
+	position: relative;
+}
+
+.header .nav-item span {
+	position: absolute;
+	border-radius: 50%;
+	background: red;
+	color: #fff;
+	top: -20px;
+	right: -25px;
+	display: block;
+	width: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.header .nav-item {
 	margin-left: 1em;
 }
 
